@@ -5,10 +5,6 @@ public class MeaningfulContext {
     private static String verb;
     private static String pluralModifier;
 
-    /* 맥락이 불분명?
-    *
-    *
-    * */
     private static void printGuessStatisticsWrongCase(char candidate, int count) {
         if (count==0) {
             number="no";
@@ -28,11 +24,6 @@ public class MeaningfulContext {
         );
         System.out.println(guessMessage);
     }
-
-
-    /* 먁락이 분명한 함수
-    *
-    * */
 
     private static String printGuessStatisticsRightCase(char candidate, int count) {
         createPluralDependentMessageParts(count);
